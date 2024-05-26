@@ -1,0 +1,35 @@
+pipeline {
+agent any
+tools {nodejs "nodeJS"}
+stages {
+ stage("Code Checkout from GitLab") {
+  steps {
+   git branch: 'main',
+    credentialsId: 'public',
+    url: 'http://192.168.1.15/at3260/demo_project.git'
+  }
+ }
+   stage('Code Quality Check via SonarQube') {
+   steps {
+       script {
+       def scannerHome = tool 'sonarscanner';
+           withSonarQubeEnv("SonarQube") {
+           sh "${tool("sonarscanner")}/bin/sonar-scanner \
+           -Dsonar.projectKey=Public_demo_project \
+           -Dsonar.sources=. \
+           -Dsonar.css.node=. \
+           -Dsonar.host.url=http://192.168.1.22:9000 \
+           -Dsonar.login="token在這邊填入"
+               }
+           }
+       }
+   }
+   stage("Install Project Dependencies") {
+   steps {
+       nodejs(nodeJSInstallationName: 'nodeJS'){
+           sh "npm install"
+           }
+       }
+   }
+}
+}

@@ -1,2 +1,14 @@
 # Integration-GitLab_Jenkins_SonarQube
 使用webhook與板機使源碼掃描自動化
+
+在透過Jenkins來整合GitLab與SonarQube
+
+當Gitlab發生push事件，將觸發SonarQube對源碼掃描
+
+在Jenkins設定好憑證與pipline script
+
+在Gitlab設定好webhook與Access Tokens
+
+在SonarQube設定好Token
+
+就可以很好的整合起來，並且掃描結束後更可以透過SonarQube套件來產生像ZAP一樣的報表。
