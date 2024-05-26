@@ -1,0 +1,2 @@
+# Integration-GitLab_Jenkins_SonarQube
+使用webhook與板機使源碼掃描自動化
