@@ -13,9 +13,11 @@
 ![1716735776770](https://github.com/DokuroTW/Integration-GitLab_Jenkins_SonarQube/assets/100449940/1278faa6-86ae-4d78-bd24-2434ddb624e2)
 
 在Gitlab設定好webhook與Access Tokens
+
 ![1716735934620](https://github.com/DokuroTW/Integration-GitLab_Jenkins_SonarQube/assets/100449940/30287715-6174-4b10-bb58-31161aa7ab01)
 
 在SonarQube設定好Token
+
 ![1716736236129](https://github.com/DokuroTW/Integration-GitLab_Jenkins_SonarQube/assets/100449940/dfffa63e-ff12-494d-9f54-c8a99b694ff8)
 
 就可以很好的整合起來，並且掃描結束後更可以透過SonarQube套件來產生像ZAP一樣的報表。
