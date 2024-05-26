@@ -10,7 +10,7 @@
 在Jenkins設定好憑證與pipeline script
 ![1716736099699](https://github.com/DokuroTW/Integration-GitLab_Jenkins_SonarQube/assets/100449940/68be9a19-a42c-443a-b783-5809a9cbdd8f)
 
-![1716735776770](https://github.com/DokuroTW/Integration-GitLab_Jenkins_SonarQube/assets/100449940/1278faa6-86ae-4d78-bd24-2434ddb624e2)
+![1716735776770](https://github.com/DokuroTW/Integration-GitLab_Jenkins_SonarQube/assets/100449940/46cbed3a-f370-410d-99a9-e23a52481742)
 
 在Gitlab設定好webhook與Access Tokens
 
