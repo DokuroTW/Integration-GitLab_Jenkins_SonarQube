@@ -7,7 +7,7 @@
 當Gitlab發生push事件，將觸發SonarQube對源碼掃描
 ![1716736812427](https://github.com/DokuroTW/Integration-GitLab_Jenkins_SonarQube/assets/100449940/06ff0872-1687-4563-a631-59dacb5cf802)
 
-在Jenkins設定好憑證與pipline script
+在Jenkins設定好憑證與pipeline script
 ![1716736099699](https://github.com/DokuroTW/Integration-GitLab_Jenkins_SonarQube/assets/100449940/68be9a19-a42c-443a-b783-5809a9cbdd8f)
 
 ![1716735776770](https://github.com/DokuroTW/Integration-GitLab_Jenkins_SonarQube/assets/100449940/1278faa6-86ae-4d78-bd24-2434ddb624e2)
