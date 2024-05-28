@@ -22,3 +22,32 @@
 
 就可以很好的整合起來，並且掃描結束後更可以透過SonarQube套件來產生像ZAP一樣的報表。
 ![1716736357449](https://github.com/DokuroTW/Integration-GitLab_Jenkins_SonarQube/assets/100449940/dbeb9995-c437-4b26-87b5-919466405816)
+
+安裝Gitlab 在ubuntu
+1.先安裝依賴套件
+```CMD
+sudo apt update
+sudo apt install ca-certificates curl openssh-server postfix tzdata perl
+```
+2.將repo用到本地
+```CMD
+curl -LO https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh
+less /tmp/script.deb.sh
+sudo bash /tmp/script.deb.sh
+```
+3.安裝GitLab Community
+`sudo apt install gitlab-ce`
+4.設定Domain
+```
+sudo nano /etc/gitlab/gitlab.rb
+
+nano 中 external_url 'https://your_domain'
+```
+5.設定root 密碼
+```
+sudo nano /etc/gitlab/initial_root_password
+
+nano 中 Password: YOUR_PASSWORD
+```
+6.啟動GitLab
+`sudo gitlab-ctl reconfigure`
