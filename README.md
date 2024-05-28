@@ -1,4 +1,6 @@
-# 安裝Gitlab 在ubuntu
+# Integration-GitLab_Jenkins_SonarQube
+
+## 安裝Gitlab 在ubuntu
 ### 1.先安裝依賴套件
 ```CMD
 sudo apt update
@@ -30,7 +32,7 @@ nano 中 Password: YOUR_PASSWORD
 
 `sudo gitlab-ctl reconfigure`
 
-# 安裝Jenkins LTS
+## 安裝Jenkins LTS
 ```
 sudo apt update
 sudo apt install fontconfig openjdk-17-jre
@@ -43,7 +45,7 @@ sudo apt-get update
 sudo apt-get install jenkins
 ```
 
-#安裝SonarQube LTS
+## 安裝SonarQube LTS
 
 ### 1.安裝JAVA
 ```
@@ -103,7 +105,7 @@ cd /opt/sonarqube/bin/linux-x86-64/
 
 ./sonar.sh start
 ```
-# Integration-GitLab_Jenkins_SonarQube
+
 使用webhook與板機使源碼掃描自動化
 ![1716735638506](https://github.com/DokuroTW/Integration-GitLab_Jenkins_SonarQube/assets/100449940/b0dd5802-0ded-4b63-a0bf-17114769936b)
 
