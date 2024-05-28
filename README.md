@@ -36,7 +36,9 @@ less /tmp/script.deb.sh
 sudo bash /tmp/script.deb.sh
 ```
 3.安裝GitLab Community
+
 `sudo apt install gitlab-ce`
+
 4.設定Domain
 ```
 sudo nano /etc/gitlab/gitlab.rb
@@ -50,4 +52,6 @@ sudo nano /etc/gitlab/initial_root_password
 nano 中 Password: YOUR_PASSWORD
 ```
 6.啟動GitLab
+
 `sudo gitlab-ctl reconfigure`
+
